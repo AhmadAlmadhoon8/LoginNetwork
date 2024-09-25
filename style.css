@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: red;
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.data-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px ;
+    gap: 20px;
+}
+.data-form img{
+    width: 200px;
+    border-radius: 50%;
+}
+.data-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.data-form form input{
+    padding: 10px 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: #cdcdcd;
+    font-size: 16px;
+}
+.data-form form input:focus{
+    border:rgb(33, 143, 194) solid 2px ;
+}
+.data-form form button{
+    width: 300px;
+    padding: 5px 0;
+    border-radius: 20px;
+    color: #cdcdcd;
+    background-color: rgb(33, 143, 194);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+.data-form form button[type="submit"]:hover{
+    background-color: rgb(90, 215, 71);
+    color: black;
+}
+.data-form form button.test:hover{
+    background-color: rgb(203, 215, 71);
+    color: black;
+}
+.data-form .inform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(33, 143, 194) ;
+    gap: 8px;
+}
+.inform div:first-child{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    direction: rtl;
+    align-items: center;
+}
+.inform .shape{
+    width: 70px;
+    height: 30px;
+    background-color: #bcb8b8;
+    border-radius: 15px;
+    position: relative;
+    transition: .5s;
+}
+.inform .shape span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #999999;
+    position: absolute;
+    left: 2px;
+    transition: .5s;
+}
+.inform span{
+    text-decoration: underline;
+}
